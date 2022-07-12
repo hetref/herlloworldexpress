@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 })
 
 // Connect to DB
-mongoose.connect(process.env.DB_CONNECTION_URL, () => { alert("Connected DB") })
+mongoose.connect(process.env.DB_CONNECTION_URL, () => { console.log("Connected DB") })
 
 app.listen(port, () => {
-    alert(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })
